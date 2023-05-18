@@ -1,5 +1,5 @@
 # NLU-Quality-Check
-Checks the quality of NLU performance by running NLU prediction API call for every test phrase from test_phrases.csv
+Checks the quality of NLU performance by running NLU prediction API call for every test phrase from `test_phrases.csv`
 
 This python script expects the following CSV file as input:
 |test_phrase|expected_intent|
@@ -9,7 +9,7 @@ This python script expects the following CSV file as input:
 |can i listen to the calls of  target device|	Features		
 |can I try it before payment|	trial
 
-and produces the following NLU_Quality_Check_\<timestamp\>.CSV file as output
+and produces the following `NLU_Quality_Check_\<timestamp\>.CSV` file as output
 |test_phrase|	detected_status|	expected_intent|	primary_intent|	all_intents|
 |---|---|---|---|---|
 |hello|	OK Primary|	**Hello**|	1434-**Hello**|	1434-Hello-0.9656 
