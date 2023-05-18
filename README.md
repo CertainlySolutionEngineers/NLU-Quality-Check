@@ -17,12 +17,12 @@ and produces the following CSV as output
 |can I try it before payment|	Failed|	trial|	1086-Payment Failed|	1086-Payment Failed-0.9257 
 |Should I pay first then call you or what|	Failed|	trial|	1086-Payment Failed|	1086-Payment Failed-0.7612 
 |Bro if you give me trail then i will pay|	Failed|	trial|	1086-Payment| Failed|	1086-Payment Failed-0.6854 
-|Error|	Unknown|		1086-Payment Failed|	1086-Payment| Failed-0.7709 
-|how to make payment|	Unknown|		1086-Payment Failed|	1086-Payment Failed-0.929 
-|Robot|	Unknown			
-|Not helpful|	Unknown|		28621-Compliment|	28621-Compliment-0.6997 1440-No-0.6457 
+|Error|	Unknown|	|	1086-Payment Failed|	1086-Payment Failed-0.7709 
+|how to make payment|	Unknown|	|	1086-Payment Failed|	1086-Payment Failed-0.929 
+|Robot|	Unknown	| |		
+|Not helpful|	Unknown|	|	28621-Compliment|	28621-Compliment-0.6997 1440-No-0.6457 
 |How to start the app|	OK Secondary|	how it works|	31244-Installation issues|	31244-Installation issues-0.6466 29826-Main Menu-0.5825 31674-How it works-0.5546 
-|All|	Unknown			
+|All|	Unknown	
 
 detected_status can be one of:
 - OK Primary - intent is recognized with highest confidence level
