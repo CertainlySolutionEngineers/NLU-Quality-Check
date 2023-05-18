@@ -9,7 +9,7 @@ This python script expects the following CSV file as input:
 |can i listen to the calls of  target device|	Features		
 |can I try it before payment|	trial
 
-and produces the following CSV as output
+and produces the following NLU_Quality_Check_<timestamp>.CSV file as output
 |test_phrase|	detected_status|	expected_intent|	primary_intent|	all_intents|
 |---|---|---|---|---|
 |hello|	OK Primary|	**Hello**|	1434-**Hello**|	1434-Hello-0.9656 
