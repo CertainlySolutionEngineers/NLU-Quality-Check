@@ -6,7 +6,8 @@ This python script expects the following CSV file as input:
 |---|---|
 |hello|Hello|
 |Good morning|Hello|
-|human|Speak To a Human|
+|can i listen to the calls of  target device|	Features		
+|can I try it before payment|	trial
 
 and produces the following CSV as output
 |test_phrase|	detected_status|	expected_intent|	primary_intent|	all_intents|
@@ -16,7 +17,6 @@ and produces the following CSV as output
 |can i listen to the calls of  target device|	Failed|	Features		
 |can I try it before payment|	Failed|	trial|	1086-Payment Failed|	1086-Payment Failed-0.9257 
 |Bro if you give me trail then i will pay|	Failed|	trial|	1086-Payment Failed|	1086-Payment Failed-0.6854 
-|Error|	Unknown|	|	1086-Payment Failed|	1086-Payment Failed-0.7709 
 |how to make payment|	Unknown|	|	1086-Payment Failed|	1086-Payment Failed-0.929 
 |Robot|	Unknown	| |		
 |Not helpful|	Unknown|	|	28621-Compliment|	28621-Compliment-0.6997 1440-No-0.6457 
