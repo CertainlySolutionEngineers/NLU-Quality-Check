@@ -13,10 +13,9 @@ and produces the following CSV as output
 |---|---|---|---|---|
 |hello|	OK Primary|	Hello|	1434-Hello|	1434-Hello-0.9656 
 |Good morning|	OK Primary|	Hello|	1434-Hello|	1434-Hello-0.7265 28621-Compliment-0.6147 
-|can i listen to the calls of  target device|	Failed|	features		
+|can i listen to the calls of  target device|	Failed|	Features		
 |can I try it before payment|	Failed|	trial|	1086-Payment Failed|	1086-Payment Failed-0.9257 
-|Should I pay first then call you or what|	Failed|	trial|	1086-Payment Failed|	1086-Payment Failed-0.7612 
-|Bro if you give me trail then i will pay|	Failed|	trial|	1086-Payment| Failed|	1086-Payment Failed-0.6854 
+|Bro if you give me trail then i will pay|	Failed|	trial|	1086-Payment Failed|	1086-Payment Failed-0.6854 
 |Error|	Unknown|	|	1086-Payment Failed|	1086-Payment Failed-0.7709 
 |how to make payment|	Unknown|	|	1086-Payment Failed|	1086-Payment Failed-0.929 
 |Robot|	Unknown	| |		
