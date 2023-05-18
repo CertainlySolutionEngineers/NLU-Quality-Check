@@ -9,10 +9,15 @@ from datetime import datetime
 #]
 
 TestPhrases = []
+TestPhrasesCnt = 0
 with open("test_phrases.csv", encoding='utf-8') as csvf: 
     reader = csv.DictReader(csvf, delimiter=';', skipinitialspace=True, strict=True)
-    for row in reader: TestPhrases.append(row)
+    for row in reader: 
+        TestPhrases.append(row)
+        TestPhrasesCnt += 1
     #print(TestPhrases)
+
+print(f'Read {TestPhrasesCnt} test phrased from test_phrases.csv')
 
 # mSpy Live bot NLUv2
 nlu_model_id=9067
@@ -22,7 +27,10 @@ nlu_model_id=10385
 # mSpy JWT
 jwt="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg0NDc4Mzc4LCJpYXQiOjE2ODQzOTE5NzgsImp0aSI6IjlhOTUxM2RiOTJiNTQ3M2ViNDZlNDQ4ZDhmMTY0ZjA0IiwidXNlcl9pZCI6NTI3OCwidXNlcm5hbWUiOiJ0ZXN0ZXIubXNweUBjZXJ0YWlubHkuaW8iLCJlbWFpbCI6InRlc3Rlci5tc3B5QGNlcnRhaW5seS5pbyJ9.bRjzJtaagtrSxYXrE2cImHuWkR4fXP7Tl-0T-XoJVis"
 
-with open(f'NLU_Quality_Check_{datetime.now().strftime("%Y%m%d-%H%M%S")}.csv', mode='w', encoding='utf-8', newline='') as out_file:
+print(f"Checking each test phrase against NLU model {nlu_model_id}...")
+TestPhrasesCnt = 0
+out_file_name = f'NLU_Quality_Check_{datetime.now().strftime("%Y%m%d-%H%M%S")}.csv'
+with open(out_file_name, mode='w', encoding='utf-8', newline='') as out_file:
     out_writer = csv.writer(out_file, delimiter=';')
     out_writer.writerow(['test_phrase', 'detected_status', 'expected_intent', 'primary_intent', 'all_intents'])
     with requests.Session() as rsession:
@@ -55,5 +63,7 @@ with open(f'NLU_Quality_Check_{datetime.now().strftime("%Y%m%d-%H%M%S")}.csv', m
                                 detected_status = "OK Primary"
                             else:
                                 detected_status = "OK Secondary"
-                print(f"{ph['test_phrase']}; {detected_status}; {ph['expected_intent']}; {primary_intent}; {detected_intents}")
+                #print(f"{ph['test_phrase']}; {detected_status}; {ph['expected_intent']}; {primary_intent}; {detected_intents}")
                 out_writer.writerow([ph['test_phrase'], detected_status, ph['expected_intent'], primary_intent, detected_intents])
+                TestPhrasesCnt += 1
+print(f"Done. {TestPhrasesCnt} phrases checked and results are stored in {out_file_name}")
