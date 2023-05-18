@@ -1,0 +1,18 @@
+test_phrase;expected_intent
+hello; Hello
+Good morning;Hello
+can i listen to the calls of  target device; features
+can I try it before payment;trial
+Should I pay first then call you or what;trial
+I’m worried my kid will see the app and try deleting it would that be a problem?;detect
+If I buy for one year and Mspy is no working, can I reclaim my payment?;trial
+I’m trying to use Wi-Fi connection.  I tried to download onto my laptop but I’m getting an error message that says the app cannot be opened because my computer can’t tell if it’s free of malware.;installation
+the program is not working, what should be done, maybe you can help;not working
+Bro i need trail if you give me then i pay you;trial
+Bro if you give me trail then i will pay;trial
+Error
+how to make payment
+Robot
+Not helpful
+How to start the app;how it works
+All

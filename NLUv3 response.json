@@ -1,0 +1,94 @@
+{
+  'text': 'hello',
+  'intents': [{
+      'name': '1434-Hello',
+      'confidence': 0.9656
+    }, {
+      'name': '28621-Compliment',
+      'confidence': 0.1715
+    }, {
+      'name': '1433-Yes',
+      'confidence': 0.154
+    }, {
+      'name': '31674-How it works',
+      'confidence': 0.114
+    }, {
+      'name': '1440-No',
+      'confidence': 0.1126
+    }, {
+      'name': '28622-Insult',
+      'confidence': 0.1012
+    }, {
+      'name': '1439-Cancel',
+      'confidence': 0.0911
+    }, {
+      'name': '31244-Installation issues',
+      'confidence': 0.0698
+    }, {
+      'name': '1436-Speak To Human',
+      'confidence': 0.068
+    }, {
+      'name': '1086-Payment Failed',
+      'confidence': 0.0672
+    }, {
+      'name': '28626-Tell Me A Joke',
+      'confidence': 0.0593
+    }, {
+      'name': '31673-Login issues',
+      'confidence': 0.0526
+    }, {
+      'name': '24335-Meta Languages',
+      'confidence': 0.0523
+    }, {
+      'name': '34995-Pricing & Plans',
+      'confidence': 0.0485
+    }, {
+      'name': '29826-Main Menu',
+      'confidence': 0.0471
+    }, {
+      'name': '35668-Already have account',
+      'confidence': 0.0431
+    }, {
+      'name': '35001-Just purchased',
+      'confidence': 0.0355
+    }, {
+      'name': '34999-Massistance',
+      'confidence': 0.03
+    }
+  ],
+  'entities': [],
+  'languages': [{
+      'name': 'English',
+      'confidence': 0.17
+    }, {
+      'name': 'German',
+      'confidence': 0.09
+    }, {
+      'name': 'Spanish',
+      'confidence': 0.09
+    }, {
+      'name': 'French',
+      'confidence': 0.08
+    }, {
+      'name': 'Japanese',
+      'confidence': 0.05
+    }, {
+      'name': 'Chinese',
+      'confidence': 0.05
+    }, {
+      'name': 'Italian',
+      'confidence': 0.04
+    }, {
+      'name': 'Portuguese',
+      'confidence': 0.04
+    }, {
+      'name': 'Swedish',
+      'confidence': 0.03
+    }, {
+      'name': 'Russian',
+      'confidence': 0.02
+    }
+  ],
+  'sentiment': 0.0,
+  'runtime_deprecated': False
+}
