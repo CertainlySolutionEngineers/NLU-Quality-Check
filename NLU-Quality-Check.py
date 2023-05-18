@@ -3,10 +3,10 @@ import csv
 import json
 from datetime import datetime
 
-TestPhrases = [
-    {"test_phrase":"hello", "expected_intent":"Hello"},
-    {"test_phrase":"good morning", "expected_intent":"Hello"}
-]
+#TestPhrases = [
+#    {"test_phrase":"hello", "expected_intent":"Hello"},
+#    {"test_phrase":"good morning", "expected_intent":"Hello"}
+#]
 
 TestPhrases = []
 with open("test_phrases.csv", encoding='utf-8') as csvf: 
